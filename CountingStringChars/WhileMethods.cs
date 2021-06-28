@@ -22,7 +22,7 @@ namespace CountingStringChars
         /// <returns>A number of punctuation marks in a string.</returns>
         public static int GetPunctuationCount(string str)
         {
-            // TODO #4. Analyze the implementation of "GetSeparatorCount" method, and implement the method using the "while" loop statement.
+            // TODO #4. Analyze the implementation of "GetPunctuationCount" method, and implement the method using the "while" loop statement.
             throw new NotImplementedException();
         }
 

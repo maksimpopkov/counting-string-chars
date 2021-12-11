@@ -60,7 +60,7 @@ namespace CountingStringChars
         {
             if (charsLeft > 0)
             {
-                return GetDigitCountRecursive(str, charsLeft - 1, char.IsDigit(str[^charsLeft]) ? ++counter : counter);
+                return GetDigitCountRecursive(str, charsLeft - 1, char.IsDigit(str[^charsLeft]) ? counter + 1 : counter);
             }
 
             return counter;
@@ -70,7 +70,7 @@ namespace CountingStringChars
         {
             if (charsLeft > 0)
             {
-                return GetLetterCountRecursive(str, charsLeft - 1, char.IsLetter(str[^charsLeft]) ? ++counter : counter);
+                return GetLetterCountRecursive(str, charsLeft - 1, char.IsLetter(str[^charsLeft]) ? counter + 1 : counter);
             }
 
             return counter;

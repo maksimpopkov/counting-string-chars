@@ -55,8 +55,6 @@ If a compiler error or warning message is not clear, [review errors details](htt
   * [do..while statement](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/do)
   * [foreach..in statement](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/foreach-in)
   * [nameof expression](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/nameof)
-  * [Increment operator++](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/arithmetic-operators#increment-operator-)
-  * [Decrement operator--](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/operators/arithmetic-operators#decrement-operator---)
   * [ref](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/ref)
 * .NET API
   * [String.Length Property](https://docs.microsoft.com/en-us/dotnet/api/system.string.length)

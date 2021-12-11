@@ -1,4 +1,5 @@
-using System;
+﻿using System;
+using System.Security;
 
 namespace CountingStringChars
 {
@@ -11,8 +12,29 @@ namespace CountingStringChars
         /// <returns>A number of white space characters in a string.</returns>
         public static int GetSpaceCount(string str)
         {
-            // TODO #3. Analyze the implementation of "GetSpaceCountRecursive" method, and implement the method using the "while" loop statement.
-            throw new NotImplementedException();
+            if (str == null)
+            {
+                throw new ArgumentNullException(nameof(str));
+            }
+
+            if (string.IsNullOrEmpty(str))
+            {
+                    return 0;
+            }
+
+            int count = 0;
+            int currentIndex = 0;
+            while (currentIndex < str.Length)
+            {
+                if (char.IsWhiteSpace(str[currentIndex]))
+                {
+                    count++;
+                }
+
+                currentIndex++;
+            }
+
+            return count;
         }
 
         /// <summary>
@@ -22,8 +44,29 @@ namespace CountingStringChars
         /// <returns>A number of punctuation marks in a string.</returns>
         public static int GetPunctuationCount(string str)
         {
-            // TODO #4. Analyze the implementation of "GetPunctuationCount" method, and implement the method using the "while" loop statement.
-            throw new NotImplementedException();
+            if (str == null)
+            {
+                throw new ArgumentNullException(nameof(str));
+            }
+
+            if (string.IsNullOrEmpty(str))
+            {
+                return 0;
+            }
+
+            int count = 0;
+            int currentIndex = 0;
+            while (currentIndex < str.Length)
+            {
+                if (char.IsPunctuation(str[currentIndex]))
+                {
+                    count++;
+                }
+
+                currentIndex++;
+            }
+
+            return count;
         }
 
         /// <summary>
